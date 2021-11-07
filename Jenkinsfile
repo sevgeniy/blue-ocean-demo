@@ -9,7 +9,8 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '${tool \'gradle32\'}/bin/gradle build'
+        tool 'gradle7'
+        sh 'gradle build'
       }
     }
 
